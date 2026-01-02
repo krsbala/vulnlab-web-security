@@ -39,4 +39,15 @@ The project is designed as a hands-on lab to understand how real-world web attac
 ---
 
 ## Repository Structure
+application/ → Vulnerable PHP application source code
+screenshots/ → Evidence of attacks and tool outputs
+README.md → Project overview
+REPORT.md → Detailed penetration testing report
+
+---
+
+## Disclaimer
+
+This project is created **strictly for educational and academic purposes**.  
+Do **NOT** deploy this application in a production environment or use it against systems you do not own or have explicit permission to test.
 
