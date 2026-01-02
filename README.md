@@ -1,20 +1,33 @@
 # Vulnerable Web Application – Penetration Testing Lab
 
-This repository contains a deliberately vulnerable web application developed for academic purposes to demonstrate common web security vulnerabilities and penetration testing techniques using Kali Linux tools.
+⚠️ **Warning:** This project is intentionally vulnerable and must be used only in a controlled academic environment.
+
+This repository contains a deliberately vulnerable web application developed for academic purposes to demonstrate common web application vulnerabilities and practical penetration testing techniques using Kali Linux.
+
+The project is designed as a hands-on lab to understand how real-world web attacks are performed and analyzed.
+
+---
 
 ## Environment
-- OS: Kali Linux
-- Web Server: Apache
-- Database: MariaDB
-- Language: PHP
+
+- **Operating System:** Kali Linux
+- **Web Server:** Apache
+- **Database:** MariaDB
+- **Backend Language:** PHP
+
+---
 
 ## Vulnerabilities Demonstrated
-- SQL Injection
+
+- SQL Injection (Manual and Automated)
 - Cross-Site Scripting (XSS)
 - Command Injection
-- Login Bruteforce
+- Weak Authentication / Login Bruteforce
+
+---
 
 ## Tools Used
+
 - Nmap
 - Nikto
 - Dirb
@@ -23,5 +36,7 @@ This repository contains a deliberately vulnerable web application developed for
 - SQLmap
 - XSSer
 
-## Disclaimer
-This project is created strictly for educational purposes. Do not deploy this application in a production environment.
+---
+
+## Repository Structure
+
