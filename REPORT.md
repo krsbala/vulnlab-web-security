@@ -2,71 +2,92 @@
 
 ## 1. Objective
 
-The objective of this project is to identify, exploit, and document common web application vulnerabilities using industry-standard penetration testing tools in a controlled local environment.
+The objective of this project is to identify, exploit, and document common web application vulnerabilities using industry-standard penetration testing tools in a controlled localhost environment.
 
 ---
 
-## 2. Environment Setup
+## 2. Application Description
+
+A custom-built vulnerable web application was developed using PHP and MariaDB.
+The application contains intentionally implemented security flaws to demonstrate real-world attack scenarios.
+
+---
+
+## 3. Environment Used
 
 - **Operating System:** Kali Linux
 - **Web Server:** Apache
 - **Database:** MariaDB
 - **Application Language:** PHP
-- **Target Application:** Custom-built vulnerable web application (local host)
+- **Target URL:** http://127.0.0.1/vulnlab/
 
 ---
 
-## 3. Tools and Techniques Used
+## 4. Footprinting and Reconnaissance
 
-### Footprinting & Reconnaissance
-- Nmap – Service and port discovery
-- Nikto – Web server vulnerability scanning
-- Dirb – Directory and endpoint enumeration
+The following tools were used to gather information about the target application:
 
-### Authentication Attacks
-- Burp Suite – Intercepting and brute-forcing login requests
-- Hydra – Automated credential brute-force attack
-
-### Injection Attacks
-- Manual SQL Injection – Authentication bypass using crafted SQL payloads
-- SQLmap – Automated detection and exploitation of SQL injection
-- XSSer – Detection of reflected Cross-Site Scripting vulnerabilities
-
-### Command Injection
-- Manual command injection testing via vulnerable input parameters
+- **Nmap:** Port and service discovery
+- **Nikto:** Web server vulnerability scanning
+- **Dirb:** Directory and file enumeration
 
 ---
 
-## 4. Attacks Performed
+## 5. Authentication Attacks
 
-- Identified exposed services and web server misconfigurations
-- Enumerated hidden directories and application endpoints
-- Performed login brute-force attacks using Burp Suite and Hydra
-- Successfully bypassed authentication using manual SQL injection
-- Extracted database information using SQLmap
-- Detected reflected XSS vulnerability using XSSer
-- Executed system-level commands through command injection flaws
+### 5.1 Burp Suite Login Bruteforce
 
-Screenshots for each attack are included in the `screenshots/` directory as evidence.
+Burp Suite was used to intercept login requests and perform a brute force attack on the authentication mechanism.
 
----
+### 5.2 Hydra Login Bruteforce
 
-## 5. Results and Observations
-
-The application was found to be vulnerable due to:
-- Lack of input validation
-- Insecure authentication logic
-- Absence of prepared statements
-- No output encoding or sanitization
-- Missing security headers
-
-These weaknesses allowed successful exploitation using both manual techniques and automated tools.
+Hydra was used to automate credential brute forcing using predefined username and password lists.
+Valid credentials were successfully discovered, proving weak authentication controls.
 
 ---
 
-## 6. Conclusion
+## 6. Injection Attacks
 
-This project demonstrates how insecure coding practices can lead to critical web application vulnerabilities.  
-It highlights the importance of secure authentication mechanisms, proper input validation, and defense-in-depth strategies in modern web applications.
+### 6.1 Manual SQL Injection
 
-The lab provided practical exposure to real-world penetration testing workflows and tools.
+SQL Injection was manually performed by injecting SQL queries into the login input fields.
+This resulted in unauthorized authentication bypass.
+
+### 6.2 SQL Injection Using SQLmap
+
+SQLmap was used to automatically detect and exploit SQL Injection vulnerabilities.
+The database structure and available databases were successfully enumerated.
+
+---
+
+## 7. Cross-Site Scripting (XSS)
+
+XSS vulnerabilities were identified using both manual payload injection and automated scanning with XSSer.
+Injected scripts were successfully executed in the browser.
+
+---
+
+## 8. Command Injection
+
+A command injection vulnerability was identified in the application.
+System commands were executed through user input, demonstrating improper input validation.
+
+---
+
+## 9. Results
+
+Multiple vulnerabilities were successfully identified and exploited, including:
+
+- Authentication bypass
+- Database enumeration
+- Script injection
+- Remote command execution
+
+These findings highlight serious security flaws in the application.
+
+---
+
+## 10. Conclusion
+
+This project demonstrates the risks of insecure coding practices and improper input validation.
+It emphasizes the importance of secure development practices, input sanitization, and layered security defenses in modern web applications.
