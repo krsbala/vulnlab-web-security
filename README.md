@@ -1,33 +1,34 @@
-# Vulnerable Web Application – Penetration Testing Lab
+Vulnerable Web Application – Penetration Testing Lab
 
-⚠️ **Warning:** This project is intentionally vulnerable and must be used only in a controlled academic environment.
+Project Overview
+This project is a deliberately vulnerable full stack web application developed for internal academic assessment.  
+The objective is to help students understand real-world web security issues by implementing common vulnerabilities and demonstrating practical attacks using penetration testing tools.
 
-This repository contains a deliberately vulnerable web application developed for academic purposes to demonstrate common web application vulnerabilities and practical penetration testing techniques using Kali Linux.
+The application is intentionally insecure and is meant only for academic and learning purposes.
 
-The project is designed as a hands-on lab to understand how real-world web attacks are performed and analyzed.
+Objectives
+- Design and implement a full stack web application
+- Intentionally introduce web security vulnerabilities
+- Demonstrate real-world attacks on localhost
+- Analyze the impact of insecure coding practices
 
----
+Technology Stack
+- Operating System: Kali Linux
+- Web Server: Apache
+- Backend Language: PHP
+- Database: MariaDB
+- Frontend: HTML / Basic CSS
 
-## Environment
-
-- **Operating System:** Kali Linux
-- **Web Server:** Apache
-- **Database:** MariaDB
-- **Backend Language:** PHP
-
----
-
-## Vulnerabilities Demonstrated
-
-- SQL Injection (Manual and Automated)
+Vulnerabilities Implemented (OWASP Top 10)
+The application intentionally includes the following vulnerabilities:
+- SQL Injection
+- Broken Authentication
 - Cross-Site Scripting (XSS)
 - Command Injection
-- Weak Authentication / Login Bruteforce
 
----
+At least one OWASP Top 10 vulnerability is required; this project demonstrates multiple vulnerabilities for learning purposes.
 
-## Tools Used
-
+Tools Used
 - Nmap
 - Nikto
 - Dirb
@@ -36,18 +37,44 @@ The project is designed as a hands-on lab to understand how real-world web attac
 - SQLmap
 - XSSer
 
----
+Localhost Execution
+This application runs entirely on localhost and does not rely on any cloud services.
 
-## Repository Structure
-application/ → Vulnerable PHP application source code
-screenshots/ → Evidence of attacks and tool outputs
-README.md → Project overview
-REPORT.md → Detailed penetration testing report
+Example URL:
+http://127.0.0.1/vulnlab/
 
----
+All attacks are demonstrated live during evaluation using Kali Linux tools.
 
-## Disclaimer
+Setup Instructions
+1. Start Apache and MariaDB services
+   sudo systemctl start apache2
+   sudo systemctl start mariadb
 
-This project is created **strictly for educational and academic purposes**.  
-Do **NOT** deploy this application in a production environment or use it against systems you do not own or have explicit permission to test.
+2. Copy the project folder to:
+   /var/www/html/
 
+3. Import the database:
+   mysql -u root -p < application/database/vulnlab.sql
+
+4. Open the browser and access:
+   http://127.0.0.1/vulnlab/
+
+Project Structure
+vulnlab-web-security/
+├── application/
+│   ├── login.php
+│   ├── search.php
+│   ├── cmd.php
+│   └── database/
+│       └── vulnlab.sql
+├── screenshots/
+├── README.md
+└── REPORT.md
+
+Team Information
+This is a group project developed collaboratively.  
+All team members contributed equally to coding, testing, documentation, and demonstration.
+
+Disclaimer
+This project is created strictly for educational purposes.  
+Do not deploy this application in a production environment.
