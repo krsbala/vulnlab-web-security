@@ -1,0 +1,14 @@
+<img width="1920" height="936" alt="xsser_scan_part2" src="https://github.com/user-attachments/assets/097e112c-9d95-46fd-9aca-f30e6855a398" />
+<img width="1920" height="936" alt="xsser_scan_part1" src="https://github.com/user-attachments/assets/6357c2bb-e8e0-4e7a-896f-2dbed729de3e" />
+<img width="1920" height="936" alt="sqlmap_injection_part2" src="https://github.com/user-attachments/assets/284e0298-f6fa-4aa4-84a9-f31262db3a0c" />
+<img width="1920" height="936" alt="sqlmap_injection_part1" src="https://github.com/user-attachments/assets/ead2b722-2f9b-4888-9f75-6d9c2b986026" />
+<img width="1920" height="936" alt="sqli_manual_part2" src="https://github.com/user-attachments/assets/ef685482-6033-4734-b7f2-27eef46e0449" />
+<img width="1920" height="936" alt="sqli_manual_part1" src="https://github.com/user-attachments/assets/3743a65c-14ea-4f21-a573-2545a82892fe" />
+<img width="1920" height="936" alt="nmap_scan" src="https://github.com/user-attachments/assets/e594cbf7-d055-4e93-8f2b-54a55f5a332b" />
+<img width="1920" height="936" alt="nikto_scan" src="https://github.com/user-attachments/assets/46515c9f-7ca8-4fe5-8f2d-f4488f25aeec" />
+<img width="1920" height="937" alt="login_failure_message" src="https://github.com/user-attachments/assets/d33db9ba-74b9-4303-9b49-eac7818ce1c6" />
+<img width="1920" height="937" alt="hydra_login_bruteforce" src="https://github.com/user-attachments/assets/9f0fa827-2e7e-468d-a19a-188f4f6e2594" />
+<img width="1920" height="936" alt="homepage" src="https://github.com/user-attachments/assets/ad4ffd70-516d-4982-8a27-dc0a0b65be28" />
+<img width="1920" height="936" alt="dirb_scan" src="https://github.com/user-attachments/assets/72d7fb98-91ca-4d74-8a13-1c1b22201a4f" />
+<img width="1920" height="937" alt="burp_login_bruteforce_part2" src="https://github.com/user-attachments/assets/1d0d64f9-0088-4d25-81b9-97008619965e" />
+<img width="1920" height="937" alt="burp_login_bruteforce_part1" src="https://github.com/user-attachments/assets/963dcd92-9b80-455d-a156-b0891f9f665a" />
